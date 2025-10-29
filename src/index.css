@@ -39,5 +39,30 @@ box-shadow: 0 2.767px 2.214px 0 rgba(26, 0, 108, 0.02), 0 3px 3px 0 rgba(0, 0, 0
   background-position: center;
   background-size: contain;
     background-repeat: no-repeat;
-
+}
+/* PAYMENTS BOXES */
+.payment-box{
+  display: flex;
+padding: 20px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 40px;
+flex: 1 0 0;
+border-radius: 16px;
+border: 1px solid #DFDFEA;
+background: #FFF;
+box-shadow: 0 22.336px 17.869px 0 rgba(26, 0, 108, 0.04), 0 12.522px 10.017px 0 rgba(26, 0, 108, 0.04), 0 6.65px 5.32px 0 rgba(26, 0, 108, 0.03), 0 2.767px 2.214px 0 rgba(26, 0, 108, 0.02), 0 1px 0 0 #FFF inset, 0 -3px 0 0 #DFDEFB inset;
+}
+  
+.payment-box-hover:hover{
+display: flex;
+padding: 20px;
+flex-direction: column;
+align-items: flex-start;
+gap: 38px;
+border-radius: 22px;
+border: 1px solid rgba(3, 68, 157, 0.00);
+background: linear-gradient(180deg, #239CFF 0%, var(--Secondary-Colors-Blue-Blue-700, #005BE3) 100%);
+box-shadow: 0 2.767px 2.214px 0 rgba(26, 0, 108, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.04), 0 100px 80px 0 rgba(26, 0, 108, 0.05), 0 41.778px 33.422px 0 rgba(26, 0, 108, 0.05), 0 22.336px 17.869px 0 rgba(26, 0, 108, 0.04), 0 12.522px 10.017px 0 rgba(26, 0, 108, 0.04), 0 6.65px 5.32px 0 rgba(26, 0, 108, 0.03), 0 2.767px 2.214px 0 rgba(26, 0, 108, 0.02), 0 1px 0 0 #FFF inset, 0 -3px 0 0 #03449D inset;
 }
