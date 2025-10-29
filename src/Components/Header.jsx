@@ -5,7 +5,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
+    <header className="w-full fixed top-0 left-0 z-50">
       <div className="max-w-[1200px] mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <h1 className="text-xl font-bold text-[#0b2239]">Paylinkly</h1>
