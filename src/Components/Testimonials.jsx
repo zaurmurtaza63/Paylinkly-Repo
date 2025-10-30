@@ -50,7 +50,7 @@ const Testimonials = () => {
     }, [activeIndex]);
 
     return (
-        <section className="py-32 flex justify-center">
+        <section className="py-[100px] flex justify-center">
             <div className="relative w-full max-w-[1200px] px-6 text-center">
                 {/* Background Card */}
                 <div className="testimonials-bg relative rounded-3xl h-[400px] text-white overflow-hidden">
