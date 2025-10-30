@@ -1,5 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import TailoredCardsImg from "../assets/Images/tailored-cards.svg";
+import AdcancedIcon from "../assets/Images/Vector.svg"
+import Integration from "../assets/Images/integration.svg"
+import Subscription from "../assets/Images/subscription.svg"
+import Terminal from "../assets/Images/terminal.svg"
+import PaymentMethod from "../assets/Images/paymentMethod.svg"
 
 const Home = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -49,7 +54,7 @@ const Home = () => {
                 }}
             >
                 <div className="max-w-[1200px] mx-auto pt[130px] flex flex-col gap-4 justify-center items-center">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0b2239] leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text leading-tight">
                         Fast and Secure Platform for <br />
                         <span className="text-[#1A6DFF]">Merchant Solutions</span>
                     </h1>
@@ -81,7 +86,7 @@ const Home = () => {
                             : "opacity-0 translate-y-10"
                             }`}
                     >
-                        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-[#0b2239] leading-tight">
+                        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold gradient-text leading-tight">
                             Tailored Solutions for <br />
                             <span className="text-[#1A6DFF]">Every Industry</span>
                         </h1>
@@ -99,15 +104,15 @@ const Home = () => {
 
 
             {/* PAYMENTS SECTION */}
-            <section ref={paymentsRef} className="mt-[100px]">
-                <div className="h-screen">
+            <section ref={paymentsRef} className="w-full mt-[100px]">
+                <div className="">
                     <div
-                        className={`max-w-[1200px] mx-auto flex flex-col gap-4 justify-center items-center transition-all duration-1000 ease-out ${isPaymentsVisible
-                                ? "opacity-100 translate-y-0"
-                                : "opacity-0 translate-y-10"
+                        className={`flex flex-col gap-4 justify-center items-center transition-all duration-1000 ease-out ${isPaymentsVisible
+                            ? "opacity-100 translate-y-0"
+                            : "opacity-0 translate-y-10"
                             }`}
                     >
-                        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-[#0b2239] leading-tight">
+                        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold gradient-text leading-tight">
                             Everything You Need to <span className="text-[#1A6DFF]"><br></br> Accept Payments</span>
                         </h1>
                         <p className="text-center text-gray-600 text-base md:text-lg max-w-[700px] mx-auto">
@@ -116,48 +121,82 @@ const Home = () => {
 
                         {/* Payment-boxes */}
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 justify-items-center">
-                            <div className="payment-box payment-box-hover  ">
-                                <h3 className="font-semibold text-lg">Card Processing</h3>
-                                <p className="text-sm mt-2 opacity-80">
-                                    Handle debit & credit payments securely.
-                                </p>
+                        <div className="px-5 gap-7 container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+
+                            <div className="payment-box payment-box-hover p-5 flex flex-col lg:gap-8 md:gap-6 gap-4">
+                                <div className="payment-box-icon payment-box-icon-hover">
+                                    <img src={AdcancedIcon} alt="AdcancedIcon" />
+                                </div>
+                                <div className="flex flex-col gap-1.5 md:gap-2.5">
+                                    <h3 className="gradient-text font-semibold md:text-[24px] text-lg">International Payments</h3>
+                                    <p className="text-sm opacity-80">
+                                        Support multiple currencies globally.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="payment-box payment-box-hover  ">
-                                <h3 className="font-semibold text-lg">Card Processing</h3>
-                                <p className="text-sm mt-2 opacity-80">
-                                    Handle debit & credit payments securely.
-                                </p>
+                            <div className="payment-box payment-box-hover p-5 flex flex-col lg:gap-8 md:gap-6 gap-4">
+                                <div className="payment-box-icon payment-box-icon-hover">
+                                    <img src={Integration} alt="AdcancedIcon" />
+                                </div>
+                                <div className="flex flex-col gap-1.5 md:gap-2.5">
+                                    <h3 className="gradient-text font-semibold md:text-[24px] text-lg">International Payments</h3>
+                                    <p className="text-sm opacity-80">
+                                        Support multiple currencies globally.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div className="payment-box payment-box-hover p-5 flex flex-col lg:gap-8 md:gap-6 gap-4">
+                                <div className="payment-box-icon payment-box-icon-hover">
+                                    <img src={PaymentMethod} alt="AdcancedIcon" />
+                                </div>
+                                <div className="flex flex-col gap-1.5 md:gap-2.5">
+                                    <h3 className="gradient-text font-semibold md:text-[24px] text-lg">International Payments</h3>
+                                    <p className="text-sm opacity-80">
+                                        Support multiple currencies globally.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div className="payment-box payment-box-hover  ">
-                                <h3 className="font-semibold text-lg">Global Transfers</h3>
-                                <p className="text-sm mt-2 opacity-80">
-                                    Send and receive funds worldwide.
-                                </p>
+                            <div className="payment-box payment-box-hover p-5 flex flex-col lg:gap-8 md:gap-6 gap-4">
+                                <div className="payment-box-icon payment-box-icon-hover">
+                                    <img src={Subscription} alt="AdcancedIcon" />
+                                </div>
+                                <div className="flex flex-col gap-1.5 md:gap-2.5">
+                                    <h3 className="gradient-text font-semibold md:text-[24px] text-lg">International Payments</h3>
+                                    <p className="text-sm opacity-80">
+                                        Support multiple currencies globally.
+                                    </p>
+                                </div>
                             </div>
 
-                           <div className="payment-box payment-box-hover  ">
-                                <h3 className="font-semibold text-lg">Global Transfers</h3>
-                                <p className="text-sm mt-2 opacity-80">
-                                    Send and receive funds worldwide.
-                                </p>
+                            <div className="payment-box payment-box-hover p-5 flex flex-col lg:gap-8 md:gap-6 gap-4">
+                                <div className="payment-box-icon payment-box-icon-hover">
+                                    <img src={Terminal} alt="AdcancedIcon" />
+                                </div>
+                                <div className="flex flex-col gap-1.5 md:gap-2.5">
+                                    <h3 className="gradient-text font-semibold md:text-[24px] text-lg">International Payments</h3>
+                                    <p className="text-sm opacity-80">
+                                        Support multiple currencies globally.
+                                    </p>
+                                </div>
                             </div>
+                            
+                            <div className="payment-box payment-box-hover p-5 flex flex-col lg:gap-8 md:gap-6 gap-4">
+                                <div className="payment-box-icon payment-box-icon-hover">
+                                    <img src={PaymentMethod} alt="AdcancedIcon" />
+                                </div>
+                                <div className="flex flex-col gap-1.5 md:gap-2.5">
+                                    <h3 className="gradient-text font-semibold md:text-[24px] text-lg">International Payments</h3>
+                                    <p className="text-sm opacity-80">
+                                        Support multiple currencies globally.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                           
 
-                             <div className="payment-box payment-box-hover  ">
-                                <h3 className="font-semibold text-lg">International Payments</h3>
-                                <p className="text-sm mt-2 opacity-80">
-                                    Support multiple currencies globally.
-                                </p>
-                            </div>
-
-                            <div className="payment-box payment-box-hover  ">
-                                <h3 className="font-semibold text-lg">International Payments</h3>
-                                <p className="text-sm mt-2 opacity-80">
-                                    Support multiple currencies globally.
-                                </p>
-                            </div>
                         </div>
 
 
