@@ -112,7 +112,7 @@ const Home = () => {
         <div className="max-w-[1200px] mx-auto pt[130px] flex flex-col gap-4 justify-center items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text leading-tight">
             Fast and Secure Platform for <br />
-            <span className="blue-gradiant-text">Merchant Solutions</span>
+            <span className="blue-text">Merchant Solutions</span>
           </h1>
 
           <p className=" text-gray-600 text-base md:text-lg max-w-[700px] mx-auto">
@@ -139,7 +139,7 @@ const Home = () => {
           >
             <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold gradient-text leading-tight">
               Tailored Solutions for <br />
-              <span className="blue-gradiant-text">Every Industry</span>
+              <span className="blue-text">Every Industry</span>
             </h1>
             <p className="text-center text-gray-600 text-base md:text-lg max-w-[700px] mx-auto">
               We provide tailored merchant solutions for every industry, from
@@ -175,7 +175,7 @@ const Home = () => {
           <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold gradient-text leading-tight">
             Everything You Need to{" "}
             <span className="text-[#1A6DFF]">
-              <br /><span className="blue-gradiant-text">Accept Payments</span> 
+              <br /><span className="blue-text">Accept Payments</span> 
             </span>
           </h1>
           <p className="text-center text-gray-600 text-base md:text-lg max-w-[700px] mx-auto">
@@ -197,7 +197,7 @@ const Home = () => {
         >
           {/* Counter 1 */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold blue-gradiant-text">
+            <h2 className="text-4xl md:text-5xl font-bold counter-gradiant-text">
               ${counts.volume.toFixed(0)}M+
             </h2>
             <p className="text-gray-600 mt-2 text-sm md:text-base">
@@ -207,7 +207,7 @@ const Home = () => {
 
           {/* Counter 2 */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold blue-gradiant-text">
+            <h2 className="text-4xl md:text-5xl font-bold counter-gradiant-text">
               {counts.transactions.toLocaleString()}+
             </h2>
             <p className="text-gray-600 mt-2 text-sm md:text-base">
@@ -217,7 +217,7 @@ const Home = () => {
 
           {/* Counter 3 */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold blue-gradiant-text">
+            <h2 className="text-4xl md:text-5xl font-bold counter-gradiant-text">
               {counts.uptime.toFixed(1)}%
             </h2>
             <p className="text-gray-600 mt-2 text-sm md:text-base">

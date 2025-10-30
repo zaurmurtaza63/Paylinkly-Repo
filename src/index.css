@@ -147,12 +147,20 @@ box-shadow: 0 2.767px 2.214px 0 rgba(26, 0, 108, 0.02), 0 3px 3px 0 rgba(0, 0, 0
   background-clip: text;
   color: transparent;
 }
-.blue-gradiant-text{
+.counter-gradiant-text{
   background: var(--Linear, linear-gradient(180deg, var(--Secondary-Colors-Blue-Blue-600, #239CFF) 0%, var(--Secondary-Colors-Blue-Blue-700, #005BE3) 100%));
  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+.blue-text{
+   background: #005BE3;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
 }
 .payment-box-hover:hover .gradient-text{
   background: #fff;
