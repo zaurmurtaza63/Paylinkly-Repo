@@ -81,7 +81,7 @@ const TabsSection = () => {
   const { title, desc, features, boxTitle, boxText , TabImg} = tabContent[activeTab];
 
   return (
-    <section className="mx-auto container px-10 tab-section my-[100px] w-full">
+    <section className="mx-auto container px-10 tab-section mt-[100px] w-full">
       {/* LEFT SIDE */}
       <div>
         <div className="mx-auto flex flex-col gap-4 justify-center items-center">
@@ -94,7 +94,7 @@ const TabsSection = () => {
 
         {/* Tabs */}
         <div className="w-full">
-        <div className="flex flex-wrap gap-3 justify-center lg:justify-center mb-8 items-center mx-auto mt-10">
+        <div className="flex flex-wrap gap-3 justify-center lg:justify-center items-center mx-auto my-10">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -127,13 +127,15 @@ const TabsSection = () => {
           </ul>
 
           {/* Floating Animated Box */}
-          <div
-            className={`mt-8 w-fit bg-white shadow-lg rounded-2xl px-5 py-3 border border-gray-200 fadeUpBox ${
+          <div className="flex items-end justify-end">
+            <div
+            className={`mt-8 w-fit bg-white shadow-lg rounded-2xl px-5 py-3 border border-gray-200 fadeUpBox align-right ${
               fadeUp ? "animate-fadeUp" : ""
             }`}
           >
             <span className="text-[#0b2239] font-semibold">{boxTitle}</span>
             <p className="text-[#52667A] text-sm">{boxText}</p>
+          </div>
           </div>
         </div>
         <div>

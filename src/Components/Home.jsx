@@ -263,6 +263,7 @@ const Home = () => {
       </section>
 
       {/* TESTIMONIALS */}
+       <TabSection/>
       <Testimonials />
 
       {/* FINAL CTA SECTION */}
@@ -309,7 +310,7 @@ const Home = () => {
         </div>
       </section>
 
-      <TabSection/>
+      
     </>
   );
 };
