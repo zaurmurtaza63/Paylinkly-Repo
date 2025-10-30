@@ -66,9 +66,9 @@ const Testimonials = () => {
                             className={`transition-opacity duration-700 absolute inset-0 flex flex-col justify-center items-center h-full ${i === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"
                                 }`}
                         >
-                            <p className="leading-relaxed px-14 text-[40px] md:text-[32px]">
+                            <h3 className="leading-relaxed px-14 text-[40px] md:text-[32px]">
                                 “{t.quote}”
-                            </p>
+                            </h3>
                             <div className="text-[16px] font-semibold">{t.name}</div>
                             <div className="text-[#CFE4FF] text-sm">{t.role}</div>
                         </div>
