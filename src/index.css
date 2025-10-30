@@ -169,3 +169,21 @@ box-shadow: 0 2.767px 2.214px 0 rgba(26, 0, 108, 0.02), 0 3px 3px 0 rgba(0, 0, 0
   background-clip: text;
   color: transparent;
 }
+/* TESTIMONIALS */
+.rotate-border {
+  animation: rotateRing 4s linear infinite;
+}
+.testimonials-bg{
+  background-image: url(./assets/Images/testimial-bg.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

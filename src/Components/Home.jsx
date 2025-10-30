@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-
 import BottomLogoText from "../assets/Images/bottom-logo-text.svg";
 import TailoredCardsImg from "../assets/Images/tailored-cards.svg";
 import AdcancedIcon from "../assets/Images/Vector.svg";
@@ -7,6 +6,7 @@ import Integration from "../assets/Images/integration.svg";
 import Subscription from "../assets/Images/subscription.svg";
 import Terminal from "../assets/Images/terminal.svg";
 import PaymentMethod from "../assets/Images/paymentMethod.svg";
+import Testimonials from "../Components/Testimonials"
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -115,7 +115,7 @@ const Home = () => {
             <span className="blue-text">Merchant Solutions</span>
           </h1>
 
-          <p className=" text-gray-600 text-base md:text-lg max-w-[700px] mx-auto">
+          <p className="text-gray-600 text-base md:text-lg max-w-[700px] mx-auto">
             Process payments seamlessly, reduce chargebacks, and grow your
             business with secure, customized merchant services powered by
             industry-leading gateways.
@@ -175,7 +175,8 @@ const Home = () => {
           <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold gradient-text leading-tight">
             Everything You Need to{" "}
             <span className="text-[#1A6DFF]">
-              <br /><span className="blue-text">Accept Payments</span> 
+              <br />
+              <span className="blue-text">Accept Payments</span>
             </span>
           </h1>
           <p className="text-center text-gray-600 text-base md:text-lg max-w-[700px] mx-auto">
@@ -183,6 +184,33 @@ const Home = () => {
             of payment solutions. Tailor-made for your business, ensuring
             efficiency and growth.
           </p>
+
+          {/* PAYMENT BOXES */}
+          <div className="px-5 gap-7 container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+            {[
+              { icon: AdcancedIcon, title: "Advanced Security", desc: "Next-gen fraud detection and AI monitoring." },
+              { icon: Integration, title: "Seamless Integration", desc: "Plug into your systems with one API." },
+              { icon: PaymentMethod, title: "Multiple Payment Methods", desc: "Accept cards, crypto, and bank transfers." },
+              { icon: Subscription, title: "Subscription Billing", desc: "Automate recurring payments effortlessly." },
+              { icon: Terminal, title: "Smart Terminals", desc: "Powerful POS systems built for speed." },
+              { icon: PaymentMethod, title: "Instant Settlements", desc: "Withdraw revenue in real-time globally." },
+            ].map((box, index) => (
+              <div
+                key={index}
+                className="payment-box payment-box-hover p-5 flex flex-col lg:gap-8 md:gap-6 gap-4"
+              >
+                <div className="payment-box-icon payment-box-icon-hover">
+                  <img src={box.icon} alt={box.title} />
+                </div>
+                <div className="flex flex-col gap-1.5 md:gap-2.5">
+                  <h3 className="gradient-text font-semibold md:text-[24px] text-lg">
+                    {box.title}
+                  </h3>
+                  <p className="text-sm opacity-80">{box.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -195,7 +223,6 @@ const Home = () => {
               : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Counter 1 */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold counter-gradiant-text">
               ${counts.volume.toFixed(0)}M+
@@ -205,7 +232,6 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Counter 2 */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold counter-gradiant-text">
               {counts.transactions.toLocaleString()}+
@@ -215,7 +241,6 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Counter 3 */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold counter-gradiant-text">
               {counts.uptime.toFixed(1)}%
@@ -226,6 +251,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Testimonials/>
     </>
   );
 };
