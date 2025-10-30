@@ -36,11 +36,14 @@ const Testimonials = () => {
 
         const timer = setInterval(() => {
             current++;
-            setProgress((current / steps) * 100);
+            setProgress((current / steps) * 60);
             if (current >= steps) {
-                clearInterval(timer);
-                setActiveIndex((prev) => (prev + 1) % testimonials.length);
-            }
+  clearInterval(timer);
+  setTimeout(() => {
+    setActiveIndex((prev) => (prev + 1) % testimonials.length);
+  }, 200); 
+}
+
         }, interval);
 
         return () => clearInterval(timer);
