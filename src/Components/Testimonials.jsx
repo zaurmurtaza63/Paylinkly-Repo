@@ -114,7 +114,8 @@ const Testimonials = () => {
                                         style={{ transition: "stroke-dashoffset 0.03s linear" }}
                                     />
                                 </svg>
-                            )}              <img
+                            )}              
+                            <img
                                 src={t.avatar}
                                 alt={t.name}
                                 className="w-full h-full object-cover rounded-[14px]"
